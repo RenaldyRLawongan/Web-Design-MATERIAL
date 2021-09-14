@@ -1,0 +1,56 @@
+<!--Tags Multimedia: image, video-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tag untuk Multimedia</title>
+</head>
+<body>
+    <h2 style="color:silver">HTML Tag untuk Multimedia</h2>
+    
+    <h3>Gambar</h3>
+    <!--Gambar dari sumber online-->
+    <img 
+    src="https://images.unsplash.com/photo-1629740081315-ecbc2619ad6a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" 
+    alt="Car" 
+    width="50%"
+    /> 
+
+    <!--Gambar dari folder lokal-->
+    <img src="Images/jong-marshes-79mNMAvSORg-unsplash.jpg" 
+    alt="Water"
+    width="50%"
+    />
+    <h3>Video</h3>
+    <!--Video dari sumber online-->
+    <video width="50%" controls>
+    <source src="https://media.istockphoto.com/videos/cartoon-animation-of-3d-isometric-city-with-moving-cars-trees-houses-video-id1257236040" type="video/mp4"/>
+    </video>
+
+    <!--Video dari folder lokal-->
+    <video width="50%" controls>
+    <source src="Videos/istockphoto-1215291953-640_adpp_is.mp4" type="video/mp4"/>
+    </video>
+
+    <h3>Audio</h3>
+    <audio controls>
+        <source src="http://datashat.net/music_for_programming_28-big_war.mp3" 
+        type="audio/mp3"
+        />
+    </audio>
+
+    <h3>IFrame</h3>
+    <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/bxq5RGwClZQ" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+    </iframe>
+</body>
+</html>

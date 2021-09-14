@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags untuk Form</title>
+</head>
+
+<body>
+    <h1>HTML Tags untuk Form</h1>
+    <form action="submission.html" method="POST">
+        <fieldset style="width: fit-content;">
+            <legend>Formulir Calon Pegawai</legend>
+            <br>
+            <label for="name">Nama :</label>
+            <input type="text" name="name" minlength="3" maxlength="30" required>
+            <br>
+            <br>
+            <label for="address">Alamat :</label>
+            <input type="text" name="address" required>
+            <br>
+            <br>
+            <label for="password">Password :</label>
+            <input type="text" name="password" minlength="8" maxlength="15" required>
+            <br>
+            <br>
+
+            <section class="genders">
+            <span>Jenis Kelamin :</span>
+
+            <input type="radio" name="genders" id="man" value="man">
+            <label for="man">Laki - Laki</label>
+
+            <input type="radio" name="genders" id="women" value="women">
+            <label for="women">Perempuan</label>
+            </section>
+
+            <br>
+
+            <section class="skills">
+            <span>Bahasa pemograman yang dikuasai :</span>
+
+            <input type="checkbox" name="skills" id="web" value="web">
+            <label for="web">Web</label>
+
+            <input type="checkbox" name="skills" id="mobile" value="mobile">
+            <label for="mobile">MOBILE</label>
+
+            <input type="checkbox" name="skills" id="desktop" value="desktop">
+            <label for="desktop">DESKTOP</label>
+            </section>
+
+            <br>
+
+            <section class="where-city">
+                <label for="citys">Kota asal :</label>
+
+                <select name="citys" id="citys">
+                    <option value="semarang">Semarang</option>
+                    <option value="manado">Manado</option>
+                    <option value="jakarta">Jakarta</option>
+                </select>
+            </section>
+
+            <br>
+
+            <section class="answerbox">
+                <label for="answer">Apa yang Membuat Kami harus memilih anda?:</label>
+                <br>
+                <textarea name="answer" id="answer" cols="50" rows="10" placeholder="Tulis jawaban Anda di sini" required></textarea>
+            </section>
+
+            <br>
+
+            <section class="process">
+                <input type="submit" value="proses">
+            </section>
+
+            <br>
+
+        </fieldset>
+    </form>
+</body>
+</html>
